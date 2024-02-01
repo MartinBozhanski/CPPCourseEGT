@@ -1,0 +1,141 @@
+										CPPQuestions
+
+1. Syntax Explanation.
+
+Describe what the following line of C++ code does: int* ptr = &var;.
+
+English: "Ptr" is a pointer from integer and it points to the addrees in memory of "var". In that way we can manipulate the value of the variable.
+
+Български: "Ptr" е пойнтър към цяло число и той сочи към адреса в паметта, на "var". По този начин ние можем да манипулираме стойността на променливата.
+
+2. Concept Clarification:
+
+Explain the difference between a while loop and a do - while loop in C++.
+
+English: In "while" loop, the condition is checking before the execution in the body of the loop. In "do-while" loop, the condition is checking after the execution in the body of the loop.
+
+Български: В "while" - цикъла, условието се проверява преди изпълнението на тялото на цикъла. В "do-while" - цикъла, условието се проверява след изпълнението на тялото на цикъла.
+
+3. Code Analysis:
+
+Given a snippet of C++ code containing a for loop, explain what the loop does, including how many times it iterates and why.
+
+Example: #include <iostream>
+	  using namespace std;
+
+	 int main() {
+		int n;
+		cin >> n;
+
+		for (int i = 0; i <= n; i++) {
+			cout << i << endl;
+}
+}
+
+English: In this program "for" loop is used to print numbers from 0 to n. We use "for" loop to make same thing many times. 
+
+Български: В тази програма "for" - цикъла е използван, за да принтира числата от 0 до n. Използваме "for" - цикъла, за да извършваме едно и също нещо, много пъти.
+
+4. Function Usage:
+
+Write about how functions prevent code duplication and give an example of a simple C++ function that calculates the square of a number. 
+
+Example: #include <iostream>
+	  using namespace std;
+
+	 int squareOfNumber(int number) {
+		return number * number;
+}
+
+	 int main() {
+		int n;
+		cin >> n;
+		int x;
+		cin >> x;
+
+		cout << squareOfNumber(n) << endl;
+		cout << squareOfNumber(x) << endl;
+} 
+
+English: Functions prevent code duplication, because we can write in them our logic and use them many times in our "main".
+
+Български: Функциите предотвратяват дублирането на код, защото можем да напишем в тях нашата логика и да ги използваме много пъти в нашия "main".
+
+5. Memory Management:
+
+Discuss the Importance of memory management in C++ and explain the difference between stack and heap memory allocation.
+
+English: "Stack" memory is used for variables with fixed sizes, while "heap" memory is used when the size of the data is unknown.
+
+Български: "Stack" - паметта се използва за променливи с фиксиран размер, докато "heap" - паметта се използва, когато размерът на данните е неясен.
+
+6. Object-Oriented Programming:
+
+Explain the concept of encapsulation in C++ and how it is achieved using classes.
+
+English: Encapsulation is "OOP" principle and it helps to organise our data in classes.
+
+Български: Енкапсулацията е "OOP" принцип и помага да организираме нашата информация в класовете.
+
+7. Error Handling:
+
+Describe how exceptions are used in C++ for error handling, with an example of a try-catch block.
+
+Example:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    try {
+        int number = 26;
+        if (number >= 38) {
+            cout << "Right number! ";
+        }
+        else {
+            throw (number);
+        }
+    }
+    catch (int number) {
+        cout << "Number must be bigger than 38! " << endl << "Your number: " << number;
+    }
+
+    return 0;
+}
+
+English: Exceptions are used for handling errors in our code in some conditions and when they find error "throw exeption". 
+
+Български: "Exceptions" се използват за хващане на грешки в нашия код при определени обстоятелства и когато ги намерят - "throw exeption".
+
+8. STL Containers
+
+Write about the purpose and use of the std::vector container in C++.
+
+English: "std::vector container in C++" is a dynamic array which has dynamic size and many functions which helps us to manipulate the information in it.
+
+Български: "std::vector container in C++" е динамичен масив, който има динамична дължина и много функции, които ни помагат да манипулираме информацията в него.
+
+9. Pointers and References:
+
+Discuss the difference between pointers and references in C++ and provide scenarios where one might be preferred over the other.
+
+English: Pointers are used when we want to set a special value "nullptr" and when we will work with dynamic memory. They hold the addresses of the variables. References are used to avoid copying of values. They hold the values of the variables.
+
+Български: Пойнтърите се използват, когато искаме да зададем стойност на променливата "nullptr" и когато ще работим с динамична памет. Те съхраняват адресите на променливите. Референциите се използват, за да се избегне копирането на стойности. Те съхраняват стойностите на променливите.
+
+10. Advanced Features:
+
+Explain the concept of templates in C++ and how they support generic programming. Include a simple example of a template function.
+
+Example: 
+
+template <typename T> T templateFunction(T t) {
+    return t;
+}
+
+English: When we work with templates we can manipulate different type of information without specifying its type until the code is initializing.
+
+Български: Когато работим с темплейти ние можем да манипулираме различен тип информация без да конкретизираме типа й докато кода не се изпълни.
+
